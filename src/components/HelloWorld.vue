@@ -32,6 +32,7 @@
         </v-card>
         <v-card class="back-card">
           <v-row style="margin-top: -60px">
+
             <v-col cols="12">
               <img class="sea-pic" src="https://assets.codepen.io/1462889/sea.png" alt="">
               <img class="img-1" src="https://assets.codepen.io/1462889/kayak.png" alt="">
