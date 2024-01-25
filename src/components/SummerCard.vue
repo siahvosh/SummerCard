@@ -41,7 +41,7 @@
                 <span
 
                   style="
-                    margin-top: 30px;
+                    margin: 30px 10px 0 23px ;
                     color: #4f4545;
                     font-size: 45px;
                     font-weight: 600;
@@ -112,18 +112,12 @@
 .front-card{
   background: #f1e6d5 !important;
   color: white;
-  border: 1px solid red;
-
-  /*overflow: hidden !important;*/
 }
 
 .back-card{
   background: #f1ebe0 !important;
   color: white;
   transform: rotateY(180deg);
-  /*border: 1px solid gray;*/
-
-
 }
 
 
@@ -134,7 +128,6 @@
   transform-style: preserve-3d;
   transition: all 0.5s ease 0.4s;
   position: absolute;
-
 }
 
 .sea-pic{
@@ -152,14 +145,12 @@
   z-index: -1;
   transform: translate(180px, 10px) ;
   filter: opacity(0);
-
   transition: all 0.4s ease 0.5s;
 }
 
 .main-card:hover .water-pic{
   transform: translate(205px, 3px);
   filter: opacity(100%);
-
 }
 
 .main-card:hover .kayak{
