@@ -23,19 +23,17 @@
                   "
                  >summer</span>
               </v-row>
-
               <img class="mount-pic" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94green%20sea%20beach%20border%20illustration_6064596.png" alt="">
               <img class="cloud-pic" src="file:///C:/Users/PC/Desktop/Untitled-Design.png" alt="">
-
             </v-col>
           </v-row>
         </v-card>
+
         <v-card class="back-card">
           <v-row style="margin-top: -60px">
-
             <v-col cols="12">
               <img class="sea-pic" src="https://assets.codepen.io/1462889/sea.png" alt="">
-              <img class="img-1" src="https://assets.codepen.io/1462889/kayak.png" alt="">
+              <img class="kayak" src="https://assets.codepen.io/1462889/kayak.png" alt="">
               <img class="water-pic" src="https://assets.codepen.io/1462889/water.png" alt="">
             </v-col>
             <v-col cols="12">
@@ -129,11 +127,12 @@
 }
 
 
-.img-1{
+.kayak{
+  width: 430px;
   transform: translate3d(-50%, 0, 0) perspective(100px);
   filter: opacity(0);
   transform-style: preserve-3d;
-  transition: all 0.7s ease 0.3s;
+  transition: all 0.5s ease 0.4s;
   position: absolute;
 
 }
@@ -151,21 +150,22 @@
 .water-pic{
   width: 180px;
   z-index: -1;
-  transform: translate(200px, 20px);
+  transform: translate(180px, 10px) ;
   filter: opacity(0);
-  transition: all 0.4s ease 0.7s;
+
+  transition: all 0.4s ease 0.5s;
 }
 
 .main-card:hover .water-pic{
-  transform: translate(215px, 10px);
+  transform: translate(205px, 3px);
   filter: opacity(100%);
 
 }
 
-.main-card:hover .img-1{
+.main-card:hover .kayak{
   visibility: visible;
   filter: opacity(100%);
-  transform: translate3d(-35%, -10%, 30px) perspective(500px);
+  transform: translate3d(-30%, -10%, 30px) perspective(500px) ;
 }
 
 .mount-pic{
