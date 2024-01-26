@@ -179,24 +179,6 @@
 }
 
 
-@keyframes cloud {
-  0%{
-    transform: translateX(-180px);
-    scale: 1.3;
-
-  }
-  50%{
-    transform: translateX(5px);
-    scale: 1.2;
-  }
-  100%{
-    transform: translateX(-180px);
-    scale: 1.3;
-
-
-  }
-}
-
 .cloud-pic{
   width: 100%;
   filter: opacity(100%) drop-shadow(0px 0px 0.8px #000000);
