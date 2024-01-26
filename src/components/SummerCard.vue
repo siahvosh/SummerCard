@@ -8,7 +8,6 @@
             <v-col cols="12">
               <v-row justify="center">
                 <img class="cloud" src="file:///C:/Users/PC/Desktop/image-from-rawpixel-id-12655439-png.png" alt="">
-
                 <span
                    style="
                     position: absolute;
@@ -38,20 +37,13 @@
             </v-col>
             <v-col cols="12">
               <v-row justify="center">
-                <span
-
-                  style="
-                    margin: 30px 10px 0 23px ;
-                    color: #4f4545;
-                    font-size: 45px;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    transform-style: preserve-3d;
-                    letter-spacing: 10px;
-                    text-shadow: 3px 3px 8px gray;
-                    z-index: -1;
-                  "
-                >kayaking</span>
+                <span class="nameCard">kayaking</span>
+              </v-row>
+            </v-col>
+            <v-col cols="12">
+              <v-row justify="center">
+<!--                 <span style="color: #27dc7b; margin: 20px 0 0 5px; padding: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, deleniti eius eum laboriosam odit quidem sapiente. Illo nesciunt provident rem? </span>-->
+                <img style="filter: opacity(70%); object-fit: cover; width: 100%;z-index: -1; position: absolute; top: 25%" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94dust%20smoke%20sandstorm%20sand_7273446.png"  alt=""/>
               </v-row>
             </v-col>
           </v-row>
@@ -85,14 +77,13 @@
   background: transparent;
   perspective: 1000px;
   cursor: pointer;
-
+  transform-style: preserve-3d;
 }
 .flip-card{
   width: 100%;
   height: 100%;
   position: relative !important;
   transition: transform 1s;
-
   transform-style: preserve-3d;
 }
 
@@ -101,29 +92,29 @@
 }
 
 .front-card, .back-card{
-
   overflow: revert !important;
   position: absolute !important;
   width: 100%;
   height: 100%;
   backface-visibility: hidden ;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
 .front-card{
   background: #f1e6d5 !important;
   color: white;
 }
-
 .back-card{
+  perspective: 1000px;
   background: #f1ebe0 !important;
   color: white;
   transform: rotateY(180deg);
+  z-index: 1;
 }
-
 
 .kayak{
   width: 430px;
-  transform: translate3d(-50%, 0, 0) perspective(100px);
+  transform: translate3d(-50%, 5%, 0) perspective(100px);
   filter: opacity(0);
   transform-style: preserve-3d;
   transition: all 0.5s ease 0.4s;
@@ -156,7 +147,7 @@
 .main-card:hover .kayak{
   visibility: visible;
   filter: opacity(100%);
-  transform: translate3d(-30%, -10%, 30px) perspective(500px) ;
+  transform: translate3d(-30%, -10%, -80px) perspective(500px) ;
 }
 
 .mount-pic{
@@ -169,15 +160,11 @@
   transition: all 1s ease 0.5s;
 }
 
-
-
 .cloud{
   width: 100%;
   margin-top: -280px;
   z-index: 0;
-
 }
-
 
 .cloud-pic{
   width: 100%;
@@ -185,13 +172,48 @@
   transform: translate3d(-100px, 24px, 0);
   transition: all 1s ease 0.3s;
   visibility: visible;
-
 }
 
 .flip-card:hover .cloud-pic {
   transform: translate(-70px, 24px);
   visibility: hidden;
-
 }
 
+.nameCard{
+  position: absolute;
+  margin: 30px 25px 0 23px ;
+  color: #314e53;
+  font-size: 45px;
+  font-weight: 600;
+  max-width: calc(100% - 20px);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  z-index: -1;
+  text-shadow: 3px 3px 8px gray;
+  transform: translate3d(10px, 10px, 0px) perspective(1000px);
+}
+
+.nameCard:before{
+  position: absolute;
+  content: '';
+  z-index: -1;
+  background: linear-gradient(217deg, #448ad5, #b8eaf9);
+  width: 70px;
+  height: 70px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -60%);
+  box-shadow: 0 6px 20px 0 rgba(16, 39, 112,.3);
+  animation: border-transform 5s linear infinite;
+}
+@keyframes border-transform{
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
+  14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; }
+  28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; }
+  42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; }
+  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; }
+  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
+  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; }
+}
 </style>
