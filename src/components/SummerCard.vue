@@ -7,7 +7,7 @@
           <v-row style="margin-top: 55%">
             <v-col cols="12">
               <v-row justify="center">
-                <img class="cloud" src="file:///C:/Users/PC/Desktop/image-from-rawpixel-id-12655439-png.png" alt="">
+                <img class="cloud" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94white%20cloud%20png%20element%20with_7267714.png" alt="">
                 <span
                    style="
                     position: absolute;
@@ -43,7 +43,7 @@
             <v-col cols="12">
               <v-row justify="center">
 <!--                 <span style="color: #27dc7b; margin: 20px 0 0 5px; padding: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, deleniti eius eum laboriosam odit quidem sapiente. Illo nesciunt provident rem? </span>-->
-                <img style="filter: opacity(70%); object-fit: cover; width: 100%;z-index: -1; position: absolute; top: 25%" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94dust%20smoke%20sandstorm%20sand_7273446.png"  alt=""/>
+                <img style="filter: opacity(65%); object-fit: cover; width: 100%;z-index: -1; position: absolute; top: 25%" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94dust%20smoke%20sandstorm%20sand_7273446.png"  alt=""/>
               </v-row>
             </v-col>
           </v-row>
@@ -162,8 +162,39 @@
 
 .cloud{
   width: 100%;
-  margin-top: -280px;
+  margin-top: -180px;
   z-index: 0;
+
+  transform: translate3d(30px, -30px, 50px);
+  transition: all 3s ease;
+  rotate: 180deg;
+  scale: 1.2;
+
+
+}
+
+.flip-card:hover .cloud {
+  transform: translate3d(-100px, 100px, 0);
+  visibility: hidden;
+}
+
+
+@keyframes cloud {
+  0%{
+    transform: translateX(-180px);
+    scale: 1.3;
+
+  }
+  50%{
+    transform: translateX(5px);
+    scale: 1.2;
+  }
+  100%{
+    transform: translateX(-180px);
+    scale: 1.3;
+
+
+  }
 }
 
 .cloud-pic{
