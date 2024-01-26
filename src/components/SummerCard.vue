@@ -23,7 +23,7 @@
                  >summer</span>
               </v-row>
               <img class="mount-pic" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94green%20sea%20beach%20border%20illustration_6064596.png" alt="">
-              <img class="cloud-pic" src="file:///C:/Users/PC/Desktop/Untitled-Design.png" alt="">
+              <img class="women-pic" src="file:///C:/Users/PC/Desktop/Untitled-Design.png" alt="">
             </v-col>
           </v-row>
         </v-card>
@@ -164,13 +164,10 @@
   width: 100%;
   margin-top: -180px;
   z-index: 0;
-
   transform: translate3d(30px, -30px, 50px);
-  transition: all 3s ease;
+  transition: all 1.5s ease;
   rotate: 180deg;
   scale: 1.2;
-
-
 }
 
 .flip-card:hover .cloud {
@@ -179,7 +176,7 @@
 }
 
 
-.cloud-pic{
+.women-pic{
   width: 100%;
   filter: opacity(100%) drop-shadow(0px 0px 0.8px #000000);
   transform: translate3d(-100px, 24px, 0);
@@ -187,7 +184,7 @@
   visibility: visible;
 }
 
-.flip-card:hover .cloud-pic {
+.flip-card:hover .women-pic {
   transform: translate(-70px, 24px);
   visibility: hidden;
 }
