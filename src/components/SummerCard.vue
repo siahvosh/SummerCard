@@ -4,7 +4,7 @@
     <div class="main-card">
       <div class="flip-card">
         <v-card class="front-card">
-          <v-row style="margin-top: 55% ;">
+          <v-row style="margin-top: 53%">
             <v-col cols="12">
               <v-row justify="center">
                 <img class="cloud" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94white%20cloud%20png%20element%20with_7267714.png" alt="">
@@ -43,7 +43,7 @@
             <v-col cols="12">
               <v-row justify="center">
 <!--                 <span style="color: #27dc7b; margin: 20px 0 0 5px; padding: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, deleniti eius eum laboriosam odit quidem sapiente. Illo nesciunt provident rem? </span>-->
-                <img style="filter: opacity(65%); object-fit: cover; width: 100%;z-index: -1; position: absolute; top: 25%" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94dust%20smoke%20sandstorm%20sand_7273446.png"  alt=""/>
+                <img class="sand-pic" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94dust%20smoke%20sandstorm%20sand_7273446.png"  alt=""/>
               </v-row>
             </v-col>
           </v-row>
@@ -102,13 +102,13 @@
   background: #f1e6d5 !important;
   color: white;
 }
+
 .back-card{
   background: #f1ebe0 !important;
   color: white;
   transform: rotateY(180deg);
 
 }
-
 .kayak{
   width: 430px;
   transform: translate3d(-50%, 5%, 0);
@@ -119,19 +119,16 @@
 .main-card:hover .kayak{
   transform: translate3d(-30%, -10%, -80px);
 }
-
 .water-pic{
   width: 180px;
   transform: translate(180px, 10px) ;
   filter: opacity(0);
   transition: all 0.4s ease 0.4s;
 }
-
 .main-card:hover .water-pic{
   transform: translate(205px, 3px);
   filter: opacity(100%);
 }
-
 .sea-pic{
   position: absolute;
   object-position: center;
@@ -141,7 +138,14 @@
   width: 100%;
   height: 200px;
 }
-
+.sand-pic{
+  filter: opacity(65%);
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 25%
+}
 
 .beach-pic{
   position: absolute;
@@ -155,22 +159,20 @@
 .women-pic{
   position: absolute;
   width: 100%;
-  filter: opacity(100%) drop-shadow(0px 0px 0.8px #000000);
+  filter: drop-shadow(0px 0px 0.8px #000000);
   transform: translate3d(-100px, 24px, 0);
   transition: all 1s ease 0.3s;
-
   visibility: visible;
 }
 .flip-card:hover .women-pic {
   transform: translate(-70px, 24px);
-  visibility: hidden;
 }
 
 .cloud{
   width: 100%;
   margin-top: -180px;
   z-index: 0;
-  transform: translate3d(30px, -30px, 50px);
+  transform: translate3d(30px, -25px, 50px);
   transform-style: preserve-3d;
   transition: all 1.5s ease;
   rotate: 180deg;
