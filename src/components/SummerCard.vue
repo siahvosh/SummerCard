@@ -22,7 +22,7 @@
                   "
                  >summer</span>
               </v-row>
-              <img class="mount-pic" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94green%20sea%20beach%20border%20illustration_6064596.png" alt="">
+              <img class="beach-pic" src="file:///C:/Users/PC/Desktop/%E2%80%94Pngtree%E2%80%94green%20sea%20beach%20border%20illustration_6064596.png" alt="">
               <img class="women-pic" src="file:///C:/Users/PC/Desktop/Untitled-Design.png" alt="">
             </v-col>
           </v-row>
@@ -73,19 +73,19 @@
 .main-card{
   width: 300px;
   height: 400px;
-  /*border: 1px solid gray;*/
   margin: 200px auto;
   background: transparent;
   perspective: 1000px;
   cursor: pointer;
-  transform-style: preserve-3d;
+  /*border: 1px solid gray;*/
 }
 .flip-card{
   width: 100%;
   height: 100%;
-  position: relative !important;
-  transition: transform 1s;
+  transition: transform 0.8s;
+  position: absolute;
   transform-style: preserve-3d;
+  /*border: 1px solid gray;*/
 }
 .main-card:hover .flip-card{
   transform: rotateY(180deg);
@@ -96,42 +96,37 @@
   position: absolute !important;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden ;
-  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 .front-card{
   background: #f1e6d5 !important;
   color: white;
 }
 .back-card{
-  perspective: 1000px;
   background: #f1ebe0 !important;
   color: white;
   transform: rotateY(180deg);
-  z-index: 1;
+
 }
 
 .kayak{
   width: 430px;
-  transform: translate3d(-50%, 5%, 0) perspective(1000px);
-  filter: opacity(0);
+  transform: translate3d(-50%, 5%, 0);
   transform-style: preserve-3d;
-  transition: all 0.5s ease  0.4s;
+  transition: all 0.5s ease 0.3s;
   position: absolute;
 }
 .main-card:hover .kayak{
-  visibility: visible;
-  filter: opacity(100%);
-  transform: translate3d(-30%, -10%, -80px) perspective(500px) ;
+  transform: translate3d(-30%, -10%, -80px);
 }
 
 .water-pic{
   width: 180px;
-  z-index: -1;
   transform: translate(180px, 10px) ;
   filter: opacity(0);
-  transition: all 0.4s ease 0.5s;
+  transition: all 0.4s ease 0.4s;
 }
+
 .main-card:hover .water-pic{
   transform: translate(205px, 3px);
   filter: opacity(100%);
@@ -148,14 +143,27 @@
 }
 
 
-.mount-pic{
+.beach-pic{
   position: absolute;
   object-fit: cover;
   object-position: bottom;
   width: 100%;
   height: 250px;
-  /*transform: translate(90px, 1px);*/
   transition: all 1s ease 0.5s;
+}
+
+.women-pic{
+  position: absolute;
+  width: 100%;
+  filter: opacity(100%) drop-shadow(0px 0px 0.8px #000000);
+  transform: translate3d(-100px, 24px, 0);
+  transition: all 1s ease 0.3s;
+
+  visibility: visible;
+}
+.flip-card:hover .women-pic {
+  transform: translate(-70px, 24px);
+  visibility: hidden;
 }
 
 .cloud{
@@ -170,20 +178,6 @@
 }
 .flip-card:hover .cloud {
   transform: translate3d(-100px, 100px, 0);
-  visibility: hidden;
-}
-
-
-.women-pic{
-  width: 100%;
-  filter: opacity(100%) drop-shadow(0px 0px 0.8px #000000);
-  transform: translate3d(-100px, 24px, 0);
-  transition: all 1s ease 0.3s;
-
-  visibility: visible;
-}
-.flip-card:hover .women-pic {
-  transform: translate(-70px, 24px);
   visibility: hidden;
 }
 
